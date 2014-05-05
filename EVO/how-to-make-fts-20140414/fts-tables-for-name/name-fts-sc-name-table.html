@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>nameFtsSCNameTable &mdash; FTS Building Block 0.1 documentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+<link rel="stylesheet" href="../_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.1',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../_static/underscore.js"></script>
+<script type="text/javascript" src="../_static/doctools.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="../_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+</script>
+    <link rel="top" title="FTS Building Block 0.1 documentation" href="../index.html" />
+    <link rel="up" title="Name FTS Tables" href="index.html" />
+    <link rel="next" title="nameFtsSCDefinitionTable" href="name-fts-sc-definition-table.html" />
+    <link rel="prev" title="nameFtsSCNamedObjectClassTable" href="name-fts-sc-namedobjectclass.html" /> 
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">FTS Building Block 0.1 documentation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li>
+                <a href="../genindex.html" title="General Index" accesskey="I">index</a>
+                </li>
+                <li>
+                <a href="name-fts-sc-definition-table.html" title="nameFtsSCDefinitionTable" accesskey="N">next</a>
+                </li>
+                <li>
+                <a href="name-fts-sc-namedobjectclass.html" title="nameFtsSCNamedObjectClassTable" accesskey="P">previous</a>
+                </li>
+                <li>
+                <a href="index.html" accesskey="U">Name FTS Tables</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+<div class="span3 ">
+  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
+  <div class="for-mobile sidebar hidden-phone">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">nameFtsSCNameTable</a><ul>
+<li><a class="reference internal" href="#member-detailes">Member detailes</a></li>
+<li><a class="reference internal" href="#china-taiwan">China/Taiwan</a></li>
+<li><a class="reference internal" href="#korea">Korea</a></li>
+<li><a class="reference internal" href="#japan">Japan</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="name-fts-sc-namedobjectclass.html"
+                        title="previous chapter">nameFtsSCNamedObjectClassTable</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="name-fts-sc-definition-table.html"
+                        title="next chapter">nameFtsSCDefinitionTable</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/fts-tables-for-name/name-fts-sc-name-table.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div>
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+         
+<div class="span3 visible-desktop visible-tablet">
+  <div class=" sidebar hidden-phone">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">nameFtsSCNameTable</a><ul>
+<li><a class="reference internal" href="#member-detailes">Member detailes</a></li>
+<li><a class="reference internal" href="#china-taiwan">China/Taiwan</a></li>
+<li><a class="reference internal" href="#korea">Korea</a></li>
+<li><a class="reference internal" href="#japan">Japan</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="name-fts-sc-namedobjectclass.html"
+                        title="previous chapter">nameFtsSCNamedObjectClassTable</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="name-fts-sc-definition-table.html"
+                        title="next chapter">nameFtsSCDefinitionTable</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/fts-tables-for-name/name-fts-sc-name-table.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="span9">
+          <div class="document">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="nameftsscnametable">
+<h1>nameFtsSCNameTable<a class="headerlink" href="#nameftsscnametable" title="Permalink to this headline">¶</a></h1>
+<p>The table contains the name strings assigned to the selection criteria
+and is set as well as poiFtsSCNameTable.</p>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p>Need to talk with NavInfo, Zenrin and NDS consortium how to express
+its structure in a metadata table properly. There are a lot of vague things
+to fullfill these metadata tables.</p>
+<p class="last">For good or bad, currently, our application does not see these
+metadata tables. They behaves on a document description, and tightly
+depends on current database storing condition. Thus, there is
+possibility, if we change structures slightly, it might affect
+their behaviors drastically. To remove such tight dependancy
+between database and application, we should maintain metadata
+tables correctly at first, then the application needs to utilize
+metadata so that it can behave flexibly.</p>
+</div>
+<div class="section" id="member-detailes">
+<h2>Member detailes<a class="headerlink" href="#member-detailes" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>selectionCriterion:</dt>
+<dd>The selection criterion.</dd>
+<dt>languageCode:</dt>
+<dd>The language code of the name string</dd>
+<dt>name:</dt>
+<dd>Name of the selection criterion in the language set in languageCode.</dd>
+</dl>
+</div>
+<div class="section" id="china-taiwan">
+<h2>China/Taiwan<a class="headerlink" href="#china-taiwan" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">selectionCriterion</th>
+<th class="head">languageCode</th>
+<th class="head">name</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>SC_COUNTRY(0)</td>
+<td>Simplified Chinese(31)</td>
+<td>省/直辖市/特区</td>
+</tr>
+<tr class="row-odd"><td>SC_COUNTRY(0)</td>
+<td>Traditional Chinese(37)</td>
+<td>省/直轄市/特區</td>
+</tr>
+<tr class="row-even"><td>SC_COUNTRY(0)</td>
+<td>English(182)</td>
+<td>Province/Special City/SAR</td>
+</tr>
+<tr class="row-odd"><td>SC_PLACE(1)</td>
+<td>Simplified Chinese(31)</td>
+<td>市/地区</td>
+</tr>
+<tr class="row-even"><td>SC_PLACE(1)</td>
+<td>Traditional Chinese(37)</td>
+<td>城市/地區</td>
+</tr>
+<tr class="row-odd"><td>SC_PLACE(1)</td>
+<td>English(182)</td>
+<td>City/Area</td>
+</tr>
+<tr class="row-even"><td>SC_CITY_DISTRICT(6)</td>
+<td>Simplified Chinese(31)</td>
+<td>区/县</td>
+</tr>
+<tr class="row-odd"><td>SC_CITY_DISTRICT(6)</td>
+<td>Traditional Chinese(37)</td>
+<td>區/縣</td>
+</tr>
+<tr class="row-even"><td>SC_CITY_DISTRICT(6)</td>
+<td>English(182)</td>
+<td>District/County</td>
+</tr>
+<tr class="row-odd"><td>SC_ROAD(2)</td>
+<td>Simplified Chinese(31)</td>
+<td>路/街</td>
+</tr>
+<tr class="row-even"><td>SC_ROAD(2)</td>
+<td>Traditional Chinese(37)</td>
+<td>路/街</td>
+</tr>
+<tr class="row-odd"><td>SC_ROAD(2)</td>
+<td>English(182)</td>
+<td>Street</td>
+</tr>
+<tr class="row-even"><td>SC_POSTAL_CODE(5)</td>
+<td>Simplified Chinese(31)</td>
+<td>邮政编码</td>
+</tr>
+<tr class="row-odd"><td>SC_POSTAL_CODE(5)</td>
+<td>Traditional Chinese(37)</td>
+<td>郵遞區號</td>
+</tr>
+<tr class="row-even"><td>SC_POSTAL_CODE(5)</td>
+<td>English(182)</td>
+<td>Postcode</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="korea">
+<h2>Korea<a class="headerlink" href="#korea" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">selectionCriterion</th>
+<th class="head">languageCode</th>
+<th class="head">name</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>SC_COUNTRY(0)</td>
+<td>Korean(103)</td>
+<td>?</td>
+</tr>
+<tr class="row-odd"><td>SC_COUNTRY(0)</td>
+<td>English(182)</td>
+<td>Province/Special City/SAR</td>
+</tr>
+<tr class="row-even"><td>SC_PLACE(1)</td>
+<td>Korean(103)</td>
+<td>?</td>
+</tr>
+<tr class="row-odd"><td>SC_PLACE(1)</td>
+<td>English(182)</td>
+<td>City/Area</td>
+</tr>
+<tr class="row-even"><td>SC_CITY_DISTRICT(6)</td>
+<td>Korean(103)</td>
+<td>?</td>
+</tr>
+<tr class="row-odd"><td>SC_CITY_DISTRICT(6)</td>
+<td>Korean(103)English(182)</td>
+<td>District/County</td>
+</tr>
+<tr class="row-even"><td>SC_ROAD(2)</td>
+<td>Korean(103)</td>
+<td>?</td>
+</tr>
+<tr class="row-odd"><td>SC_ROAD(2)</td>
+<td>English(182)</td>
+<td>Street</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="japan">
+<h2>Japan<a class="headerlink" href="#japan" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">selectionCriterion</th>
+<th class="head">languageCode</th>
+<th class="head">name</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>?</td>
+<td>Japanese(102)</td>
+<td>都道府県</td>
+</tr>
+<tr class="row-odd"><td>?</td>
+<td>English(182)</td>
+<td>Prefecture</td>
+</tr>
+<tr class="row-even"><td>?</td>
+<td>Japanese(102)</td>
+<td>市区町村</td>
+</tr>
+<tr class="row-odd"><td>?</td>
+<td>English(182)</td>
+<td>Municipality</td>
+</tr>
+<tr class="row-even"><td>?</td>
+<td>Japanese(102)</td>
+<td>町/大字</td>
+</tr>
+<tr class="row-odd"><td>?</td>
+<td>English(182)</td>
+<td>Machi/Oaza</td>
+</tr>
+<tr class="row-even"><td>?</td>
+<td>Japanese(102)</td>
+<td>丁目/字</td>
+</tr>
+<tr class="row-odd"><td>?</td>
+<td>English(182)</td>
+<td>Chome/Aza</td>
+</tr>
+<tr class="row-even"><td>?</td>
+<td>Japanese(102)</td>
+<td>街区/番地</td>
+</tr>
+<tr class="row-odd"><td>?</td>
+<td>English(182)</td>
+<td>City block/Land number</td>
+</tr>
+<tr class="row-even"><td>?</td>
+<td>Japanese(102)</td>
+<td>住居番号/支番</td>
+</tr>
+<tr class="row-odd"><td>?</td>
+<td>English(182)</td>
+<td>Houser number/Land number extension</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar ">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="../genindex.html" title="General Index" >index</a></li>
+        <li><a href="name-fts-sc-definition-table.html" title="nameFtsSCDefinitionTable" >next</a></li>
+        <li><a href="name-fts-sc-namedobjectclass.html" title="nameFtsSCNamedObjectClassTable" >previous</a></li>
+        <li><a href="../index.html">FTS Building Block 0.1 documentation</a></li>
+        <li><a href="index.html" >Name FTS Tables</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer>
+          &copy; Copyright 2014, ALPINE.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>

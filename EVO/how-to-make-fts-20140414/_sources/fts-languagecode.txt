@@ -1,0 +1,78 @@
+====================
+languageCode for FTS
+====================
+
+Set the following values to FTS's languageCodes.  
+
+China/Taiwan
+============
+
+.. list-table::
+   :header-rows: 1
+
+   * - languageCode
+     - language
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - Mandarin
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - Cantonese
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - Minnan
+
+   * - 182
+     - English
+
+   * - 182
+     - Portuguese
+
+Japan
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - languageCode
+     - language
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - Japanese
+
+   * - 182
+     - English
+
+Korea
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - languageCode
+     - language
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - Korean
+
+   * - 182
+     - English
+
+
+.. note::
+
+   Set UNDEFINED_LANGUAGE_CODE(0) to its area's default language for
+   the following reason.
+
+   This is required in NDS spec (2.3.2 NDS FormatSpecification.pdf,
+   p.348, p.351).
+
+   languageCode column is bound to a SQLite's hidden column called
+   languageid. SQLite's 'MATCH' operator only searches records with
+   languageid=0 when a languageid is not specified in a query. And you can
+   not specify multi languageid in a query (see
+   https://www.sqlite.org/fts3.html#*fts4languageid).
+
+   So, to avoid forcing an application always specify languageid in a
+   query, setting UNDEFINED_LANGUAGE_CODE(0) to a default language in
+   an area is needed.

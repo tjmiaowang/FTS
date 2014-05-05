@@ -1,0 +1,16 @@
+==============
+POI FTS Tables
+==============
+
+The following tables are needed to make FTS work for POI building block.
+
+.. toctree::
+   :maxdepth: 2
+   
+   poi-fts-table
+   poi-fts-sc-namedobjectclass-table
+   poi-fts-sc-name-table
+   poi-fts-sc-definition-table
+   poi-fts-attribute-definition-table
+   poi-fts-col-meta-table
+

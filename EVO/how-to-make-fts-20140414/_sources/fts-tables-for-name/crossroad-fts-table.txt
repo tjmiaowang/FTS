@@ -1,0 +1,59 @@
+=================
+crossroadFtsTable
+=================
+
+This table contains combinations of all road named objects referenced
+by links connected to the same intersection.
+
+Member detailes
+===============
+
+mortonCode:
+   The mortonCode of the crossing
+
+roadNamedObject1:
+   Named object of the first road. Set a road named object stored in
+   nameFtsTable.
+
+
+roadNamedObject2:
+   Named object of the second road. Set a road named object stored in
+   nameFtsTable.
+
+China/Taiwan
+------------
+
+Create this table. See :ref:`example`
+
+
+Korea
+-----
+
+There is no need to create this table. Crossroad search function
+does not exist for Korea's navi.
+
+Japan
+-----
+
+There is no need to create this table. Crossroad search function
+does not exist for Japan's navi.
+
+.. _example:
+
+Example
+=======   
+
+.. list-table:: 
+   :header-rows: 1
+
+   * - mortonCode
+     - roadNamedObject1
+     - roadNamedObject2
+
+   * - 1415378757800435944
+     - 1863538
+     - 1863534
+
+   
+
+

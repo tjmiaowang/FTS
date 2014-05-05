@@ -1,0 +1,294 @@
+===========
+poiFtsTable
+===========
+
+This table contains the FTS content for POIs.
+
+Member detailes
+===============
+
+docId:
+   You do not need to store docId by yourself. It is assigned automatically by SQLite when you insert a record. docId is an alias of SQLite's rowid.
+   
+languageCode:
+   Language code for this entry. See :doc:`../fts-languagecode`
+
+poiId:
+   The POI id.
+   
+mortonCode:
+   Morton code of the POI.
+
+poiName:
+   The POI name. An application uses this value for HMI display as it
+   is, thus, set only a default official poi name.
+
+   Example::
+
+      北京首都国际机场
+   
+poiCategory:
+   Space separated list of category names of the POI. Set not only the
+   POI's direct parent category, but also its ancestor's one. For
+   example, if a POI is Walmart, and when its category path looks like
+   "Shopping > Supermarket > Walmart", then, this column should
+   be like this;
+
+   Example::
+
+      Shopping Supermarket
+
+   If a POI belongs to several parent categories, like petrol stations
+   under "Auto Service" and "Stopping Possibilities", then, set all of
+   them by getting category names belonging to the category path,
+   merging them, and removing duplicate names.
+
+   Example::
+
+      Stopping Possibilities Auto Service Petrol Station
+   
+poiPhone:
+   Space separated list of phone numbers of the POI. Set the following
+   phone number patterns to match user's input as much as possible
+   
+   1. With country code, with area code (without first 0), without breaks (the same value with poiTable's phone)
+   2. Without country code, with area code, without breaks
+   3. Without country code, without area code, without breaks
+   4. With country code, with area code (without first 0), with breaks
+   5. Without country code, with area code, with breaks
+
+   Example::
+
+      861064541100 01064541100 64541100 86-10-6454-1100 010-6454-1100
+
+   When storing phone number, you can use any symbolic characters,
+   like hyphen(-), a white space, as a phone number breaks. A SQLite
+   tokenizer can recognize these symbolic characters as a separator.
+
+   By storing these phone number patterns, you can find a POI by the
+   following query patterns.
+
+   * 861064541100
+   * 01064541100 
+   * 64541100
+   * 86-10-6454-1100
+   * 010-6454-1100
+   * +861064541100
+   * +86 10 6454 1100
+   * 86 10 6454 1100
+   * 010 6454 1100
+   * (010)64541100
+ 
+criterionA - criterionJ:
+   Address names, like 'Beijing', 'Shunyi District', of the POI. See :ref:`criterion_and_attribute_a_to_j_columns_label`
+   to know which address component should be set for each criterion columns
+   
+attributeJ:
+   Pinyin/Jyutping/Bopomofo or Yomigana of poiName column. Used for
+   sorting a result set. Storing such data into this column is not a
+   NDS standard way. We do this intentionally, because there is no
+   standard way for it, but needed to achieve our application's
+   request.
+   
+searchTags:
+   Space separated list of poiName's synonyms. Set the same synonyms
+   with which NVC or SLI has. 
+
+   In China, if a POI has both simplified and traditional Chinese
+   name, set official one to poiName, others to searchTags.
+
+   Example::
+    
+     北京机场 北京首都國際機場 北京機場
+
+exceptionTags:
+   Currently there is no need to store this column.
+   
+priorityIndex:
+   Currently there is no need to store this column.
+
+.. _criterion_and_attribute_a_to_j_columns_label:
+
+criterion and attribute A to J columns
+======================================
+
+The following tables show what should be stored in criterion and
+attribute A to J columns for each area.
+
+China/Taiwan
+------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Column name
+     - Column's value
+     - Example
+
+   * - criterionA
+     - Province
+     - 广东省
+
+   * - criterionB
+     - City
+     - 湛江市
+
+   * - criterionC
+     - City district
+     - 徐闻县
+
+   * - criterionD
+     - Street
+     - 民主路
+
+   * - criterionH
+     - Postal code
+     - 524100
+
+   * - attributeJ
+     - Pinyin/Jyutping/Bopomofo of poiName
+     - Zhong Guo Gong Shang Yin Hang Min Zhu Lu Zhi Hang
+
+Korea
+-----
+
+.. list-table::
+   :header-rows: 1
+
+   * - Column name
+     - Column's value
+     - Example
+
+   * - criterionA
+     - Province/Metropolitan cities (do, gwangyeok-si)
+     - 	Seoul special city (서울특별시, 서울特別市)
+
+   * - criterionB
+     - City (si, gun, gu)
+     - Andong (안동시, 安東市)
+
+   * - criterionC
+     - City district (eup, myeon, dong)
+     - 
+
+   * - criterionD
+     - Street
+     - 
+
+   * - attributeJ
+     - Hangul jamo of poiName (http://en.wikipedia.org/wiki/List_of_hangul_jamo)
+     - 
+
+Japan
+-----
+
+.. list-table::
+   :header-rows: 1
+
+   * - Column name
+     - Column's value
+     - Example
+
+   * - criterionA
+     - Prefecture/Metropolis (To, Do, Fu, Ken)
+     - Fukushima-ken (福島県)
+
+   * - criterionB
+     - City/Ward/Town/Village(Shi, Ku, Chou, Mura)
+     - Iwaki-shi (いわき市)
+
+   * - criterionC
+     - District (Machi, Oaza)
+     - Ojima-machi (小島町)
+
+   * - criterionD
+     - Neighborhood (Aza, Choume)
+     - 4-chome (4丁目)
+
+   * - attributeJ
+     - Yomigana of poiName
+     - ｲﾜｷｼﾔｸｼｮ
+
+Are duplicate poiIds allowd?
+============================
+
+Each FTS record must be unique by languageCode and poiId. Thus, below
+is valid.
+
+.. list-table:: Unique by languageCode and poiId
+   :header-rows: 1
+
+   * - languageCode
+     - poiId
+     - poiName
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - 100
+     - 北京首都国际机场
+
+   * - 182 (English)
+     - 100
+     - Capital Airport
+
+But the following is not allowed.
+
+.. list-table:: Duplicate poiIds in a languageCode
+   :header-rows: 1
+
+   * - languageCode
+     - poiId
+     - poiName
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - 100
+     - 北京首都国际机场
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - 100
+     - 北京首都國際機場 
+
+   * - 182 (English)
+     - 100
+     - Capital Airport
+
+The reason of this rule is because if we allow duplicate poiIds in a
+languageCode situation, an application have to scan a result set and
+remove duplicate one. Apparently, this behavior affects performance,
+thus should be avoided.
+
+Example
+=======   
+
+.. code-block:: yaml
+
+   - docId: 26158657
+     languageCode: 0(UNDEFINED_LANGUAGE_CODE)
+     poiId: 11794859
+     mortonCode: 1415489562579601745
+     poiName: 北京首都国际机场
+     poiCategory: 交通服务 机场 机场/候机楼
+     poiPhone: 861064541100 01064541100 64541100 86-10-6454-1100 010-6454-1100
+     criterionA: 北京市 
+     criterionB: 
+     criterionC: 顺义区
+     criterionD:
+     criterionH:
+     attributeJ: Bei Jing Shou Du Guo Ji Ji Chang
+     searchTags: 北京机场 北京首都國際機場 北京機場
+     
+   - docId: 26158658
+     languageCode: 182(English)
+     poiId: 11794859
+     mortonCode: 1415489562579601745
+     poiName: Capital Airport
+     poiCategory: Traffic Airport Airport / Terminal
+     poiPhone: 861064541100 1064541100 01064541100 010-6464-1100
+     criterionA: BEIJING 
+     criterionB: 
+     criterionC: Shunyi District
+     criterionD:
+     criterionH:
+     attributeJ:
+     searchTags: Beijing Capital International Airport
+
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>FTS Building Block &mdash; FTS Building Block 0.1 documentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+<link rel="stylesheet" href="_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    './',
+            VERSION:     '0.1',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="_static/underscore.js"></script>
+<script type="text/javascript" src="_static/doctools.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+</script>
+    <link rel="top" title="FTS Building Block 0.1 documentation" href="#" />
+    <link rel="next" title="Common Tables for both POI and Name" href="fts-tables-for-common/index.html" /> 
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">FTS Building Block 0.1 documentation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li>
+                <a href="genindex.html" title="General Index" accesskey="I">index</a>
+                </li>
+                <li>
+                <a href="fts-tables-for-common/index.html" title="Common Tables for both POI and Name" accesskey="N">next</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+<div class="span3 ">
+  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
+  <div class="for-mobile sidebar hidden-phone">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">FTS Building Block</a><ul>
+<li><a class="reference internal" href="#what-should-be-read-to-understand-fts">What should be read to understand FTS</a></li>
+<li><a class="reference internal" href="#how-to-store-each-fts-table">How to store each FTS table</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="fts-tables-for-common/index.html"
+                        title="next chapter">Common Tables for both POI and Name</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div>
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+         
+<div class="span3 visible-desktop visible-tablet">
+  <div class=" sidebar hidden-phone">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">FTS Building Block</a><ul>
+<li><a class="reference internal" href="#what-should-be-read-to-understand-fts">What should be read to understand FTS</a></li>
+<li><a class="reference internal" href="#how-to-store-each-fts-table">How to store each FTS table</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="fts-tables-for-common/index.html"
+                        title="next chapter">Common Tables for both POI and Name</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="span9">
+          <div class="document">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="fts-building-block">
+<h1>FTS Building Block<a class="headerlink" href="#fts-building-block" title="Permalink to this headline">¶</a></h1>
+<p>Full-text Search (FTS) building block provides full text search functionality for POI and Name building block.
+The implementation allows applications to support a convenient one‐shot destination input for POIs and addresses.</p>
+<div class="section" id="what-should-be-read-to-understand-fts">
+<h2>What should be read to understand FTS<a class="headerlink" href="#what-should-be-read-to-understand-fts" title="Permalink to this headline">¶</a></h2>
+<p>To understand this building block, you need to read the following documents.</p>
+<ul class="simple">
+<li>NDS – Format Specification, 17 Full‐text Search Building Block on page 323</li>
+<li>NDS – Physical Model Description, <a class="reference external" href="../../nds-physical-model-html/content/nds.all/FtsDatabase_SQL_DATABASE.html">FtsDatabase Physical Model</a></li>
+<li><a class="reference external" href="http://www.sqlite.org/fts3.html">SQLite FTS3 and FTS4 Extensions</a></li>
+</ul>
+</div>
+<div class="section" id="how-to-store-each-fts-table">
+<h2>How to store each FTS table<a class="headerlink" href="#how-to-store-each-fts-table" title="Permalink to this headline">¶</a></h2>
+<p>The following sections show how to store each FTS table&#8217;s content.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="fts-tables-for-common/index.html">Common Tables for both POI and Name</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-common/building-block-table.html">buildingBlockTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-common/building-block-relation-table.html">buildingBlockRelationTable</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fts-tables-for-poi/index.html">POI FTS Tables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-poi/poi-fts-table.html">poiFtsTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-poi/poi-fts-sc-namedobjectclass-table.html">poiFtsSCNamedObjectClassTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-poi/poi-fts-sc-name-table.html">poiFtsSCNameTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-poi/poi-fts-sc-definition-table.html">poiFtsSCDefinitionTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-poi/poi-fts-attribute-definition-table.html">poiFtsAttributeDefinitionTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-poi/poi-fts-col-meta-table.html">poiFtsColMetaTable</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fts-tables-for-name/index.html">Name FTS Tables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-name/name-fts-table.html">nameFtsTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-name/crossroad-fts-table.html">crossroadFtsTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-name/name-fts-sc-namedobjectclass.html">nameFtsSCNamedObjectClassTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-name/name-fts-sc-name-table.html">nameFtsSCNameTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-name/name-fts-sc-definition-table.html">nameFtsSCDefinitionTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-tables-for-name/name-fts-col-meta-table.html">nameFtsColMetaTable</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fts-languagecode.html">languageCode for FTS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fts-languagecode.html#china-taiwan">China/Taiwan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-languagecode.html#japan">Japan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fts-languagecode.html#korea">Korea</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar ">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="genindex.html" title="General Index" >index</a></li>
+        <li><a href="fts-tables-for-common/index.html" title="Common Tables for both POI and Name" >next</a></li>
+        <li><a href="#">FTS Building Block 0.1 documentation</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer>
+          &copy; Copyright 2014, ALPINE.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>

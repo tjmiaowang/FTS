@@ -1,0 +1,53 @@
+==============================
+poiFtsAttributeDefinitionTable
+==============================
+This table contains the definitions of the POI attributes. 
+
+Member detailes
+===============
+
+attributeTypeId :
+   ID of the POI attribute type.
+
+columnName :
+   The column name, e.g. "attributeA", "attributeB".
+
+iconSetId :
+   The ID of the associated icon set.
+
+China/Taiwan
+============
+
+No request to store this table.
+
+.. list-table::
+   :header-rows: 1
+
+   * - attributeTypeId
+     - columnName
+     - iconSetId
+
+Korea
+=====
+
+No request to store this table.
+
+.. list-table::
+   :header-rows: 1
+
+   * - attributeTypeId
+     - columnName
+     - iconSetId
+
+Japan
+=====
+
+No request to store this table.
+
+.. list-table::
+   :header-rows: 1
+
+   * - attributeTypeId
+     - columnName
+     - iconSetId
+

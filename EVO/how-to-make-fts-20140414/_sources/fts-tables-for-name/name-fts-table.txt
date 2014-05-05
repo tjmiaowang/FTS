@@ -1,0 +1,315 @@
+============
+nameFtsTable
+============
+
+This table contains FTS content for Address.
+
+Member detailes
+===============
+
+docId:
+   You do not need to store docId by yourself. It is assigned automatically by SQLite when you insert a record. docId is an alias of SQLite's rowid.
+   
+languageCode:
+   Language code for this entry. See :doc:`../fts-languagecode`
+
+namedObjectId:
+   The named object Id of administrative area or road name stored
+   in criterion A to J columns. Set the lowest address level
+   criterion's named object Id. For example, if criterionA, B, C and D
+   correspond to Province, City, City district and Street,
+   namedObjectId should be stored like the following example.
+
+   .. list-table:: Example of how to set namedObjectId
+      :widths: 10 10 10 10 10 20
+      :header-rows: 1
+   
+      * - namedObjectId
+        - criterionA
+        - criterionB
+	- criterionC
+	- criterionD
+        - description
+
+      * - 10000
+        - 广东省
+        - 
+	- 
+	- 
+        - Set criterionA's named object Id to namedObjectId column
+
+      * - 10010
+        - 广东省
+        - 湛江市
+	- 
+	- 
+        - Set criterionB's named object Id to namedObjectId column
+
+      * - 10100
+        - 广东省
+        - 湛江市
+	- 徐闻县
+	- 
+        - Set criterionC's named object Id to namedObjectId column
+
+      * - 11000
+        - 广东省
+        - 湛江市
+	- 徐闻县
+	- 民主路
+        - Set criterionD's named object Id to namedObjectId column
+
+      * - 11001
+        - 广东省
+        - 湛江市
+	- 徐闻县
+	- 华建路
+        - Set criterionD's named object Id to namedObjectId column
+
+
+mortonCode:
+   Morton code of the Named Object.
+
+criterionA - criterionJ:
+   Address names, like 'Beijing', 'Shunyi District', of this record. See :ref:`criterion_a_to_j_columns_label`
+   to know which address component should be set for each criterion columns
+
+searchTags:
+   Space separated list of the Named Object's synonyms. Set the same synonyms
+   with which NVC or SLI has. 
+
+   In China, if a named object has both simplified and traditional Chinese
+   name, set official one to a criterion column, others to searchTags.
+
+exceptionTags:
+   Currently there is no requirement for this column.
+   
+priorityIndex:
+   Currently there is no requirement for this column.
+
+
+.. _criterion_a_to_j_columns_label:
+
+criterion A to J columns
+========================
+
+The following tables show what should be stored in criterion and
+attribute A to J columns for each area.
+
+China/Taiwan
+------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Column name
+     - Column's value
+     - Example
+
+   * - criterionA
+     - Province
+     - 广东省
+
+   * - criterionB
+     - City
+     - 湛江市
+
+   * - criterionC
+     - City district
+     - 徐闻县
+
+   * - criterionD
+     - Street
+     - 民主路
+
+   * - criterionJ
+     - Pinyin/Jyutping/Bopomofo of the Named Object
+     - Guang Dong Sheng
+
+Korea
+-----
+
+.. list-table::
+   :header-rows: 1
+
+   * - Column name
+     - Column's value
+     - Example
+
+   * - criterionA
+     - Province/Metropolitan cities (do, gwangyeok-si)
+     - 	Seoul special city (서울특별시, 서울特別市)
+
+   * - criterionB
+     - City (si, gun, gu)
+     - Andong (안동시, 安東市)
+
+   * - criterionC
+     - City district (eup, myeon, dong)
+     - 
+
+   * - criterionD
+     - Street
+     - 
+
+   * - criterionJ
+     - Hangul jamo of the Named Object (http://en.wikipedia.org/wiki/List_of_hangul_jamo)
+     - 
+
+Japan
+-----
+
+.. list-table::
+   :header-rows: 1
+
+   * - Column name
+     - Column's value
+     - Example
+
+   * - criterionA
+     - Prefecture/Metropolis (To, Do, Fu, Ken)
+     - Fukushima-ken (福島県)
+
+   * - criterionB
+     - City/Ward/Town/Village(Shi, Ku, Chou, Mura)
+     - Iwaki-shi (いわき市)
+
+   * - criterionC
+     - District (Machi, Oaza)
+     - Ojima-machi (小島町)
+
+   * - criterionD
+     - Neighborhood (Aza, Choume)
+     - 4-chome (4丁目)
+
+   * - criterionJ
+     - Yomigana of the Named Object
+     - ｲﾜｷｼ
+
+Are duplicate namedObjectId allowd?
+===================================
+
+Each FTS record must be unique by languageCode and namedObjectId. Thus, below
+is valid.
+
+.. list-table:: Unique by languageCode and namedObjectId
+   :header-rows: 1
+
+   * - languageCode
+     - namedObjectId
+     - criterionX
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - 100
+     - 澳门
+
+   * - 182 (English)
+     - 100
+     - Macau
+
+But the following is not allowed.
+
+.. list-table:: Duplicate namedObjectId in a languageCode
+   :header-rows: 1
+
+   * - languageCode
+     - namedObjectId
+     - criterionX
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - 100
+     - 澳门
+
+   * - 0 (UNDEFINED_LANGUAGE_CODE)
+     - 100
+     - 澳門
+
+   * - 182 (English)
+     - 100
+     - Macau
+
+The reason of this rule is because if we allow duplicate namedObjectId in a
+languageCode situation, an application have to scan a result set and
+remove duplicate one. Apparently, this behavior affects performance,
+thus should be avoided.
+
+Example
+=======   
+
+.. list-table:: 
+   :header-rows: 1
+
+   * - languageCode
+     - namedObjectId
+     - mortonCode
+     - criterionA
+     - criterionB
+     - criterionC
+     - criterionD
+
+   * - 0
+     - 67109687
+     - 1408242357294646261
+     - 河北省
+     - 
+     - 
+     - 
+
+   * - 182
+     - 67109687
+     - 1408242357294646261
+     - HEBEI
+     - 
+     - 
+     - 
+
+   * - 0
+     - 67109738
+     - 1408696672832811991
+     - 河北省
+     - 衡水市
+     - 
+     - 
+
+   * - 182
+     - 67109738
+     - 1408696672832811991
+     - HEBEI
+     - Hengshui
+     - 
+     - 
+
+   * - 0
+     - 67110994
+     - 1409068627711021787
+     - 河北省
+     - 衡水市
+     - 深州市
+     - 
+
+   * - 182
+     - 67110994
+     - 1409068627711021787
+     - HEBEI
+     - Hengshui
+     - Shenzhou
+     - 
+
+   * - 0
+     - 67110994
+     - 1409065330525173390
+     - 河北省
+     - 衡水市
+     - 深州市
+     - 黄石高速公路
+
+   * - 182
+     - 67110994
+     - 1409065330525173390
+     - HEBEI
+     - Hengshui
+     - Shenzhou
+     - Huangshi Hwy 
+
+
+

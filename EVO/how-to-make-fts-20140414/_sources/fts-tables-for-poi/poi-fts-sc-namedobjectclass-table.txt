@@ -1,0 +1,125 @@
+=============================
+poiFtsSCNamedObjectClassTable
+=============================
+
+The table contains the named object classes assigned to the selection criteria.
+
+.. todo::
+
+   Need to talk with NavInfo, Zenrin and NDS consortium how to express
+   its structure in a metadata table properly. There are a lot of vague things
+   to fullfill these metadata tables.
+
+   For good or bad, currently, our application does not see these
+   metadata tables. They behaves on a document description, and tightly
+   depends on current database storing condition. Thus, there is
+   possibility, if we change structures slightly, it might affect
+   their behaviors drastically. To remove such tight dependancy
+   between database and application, we should maintain metadata
+   tables correctly at first, then the application needs to utilize
+   metadata so that it can behave flexibly.
+   
+Member detailes
+===============
+
+selectionCriterion:
+   The selection criterion.
+
+sequenceNumber:
+   The sequence number of the named object class per selection criterion, starting from 0.
+
+namedObjectClass:
+   The named object class assigned to the selection criterion.
+
+China/Taiwan
+============
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - sequenceNumber
+     - namedObjectClass
+     - description
+
+   * - SC_COUNTRY(0)
+     - 0
+     - ?
+     - Province
+
+   * - SC_PLACE(1)
+     - 0
+     - ?
+     - City
+
+   * - SC_CITY_DISTRICT(6)
+     - 0
+     - ?
+     - City district
+
+   * - SC_ROAD(2)
+     - 0
+     - ?
+     - Street
+
+   * - SC_POSTAL_CODE (5)
+     - 0
+     - ?
+     - Postal code
+
+Korea
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - sequenceNumber
+     - namedObjectClass
+     - description
+
+   * - SC_COUNTRY(0)
+     - 0
+     - ?
+     - Province/Metropolitan cities (do, gwangyeok-si)
+
+   * - SC_PLACE(1)
+     - 0
+     - ?
+     - City (si, gun, gu)
+
+   * - SC_CITY_DISTRICT(6)
+     - 0
+     - ?
+     - City district (eup, myeon, dong)
+
+   * - SC_ROAD(2)
+     - 0
+     - ?
+     - Street
+
+Japan
+=====
+
+To express Japnese address structure, the following six levels are
+needed, at least.
+
+* Prefecture (都道府県)
+* Municipality (市区町村)
+* Machi / Oaza (町 / 大字)
+* Chome / Aza (丁目 / 字)
+* City block (街区) / Land number (番地)
+* Houser number (住居番号) / Land number extension (支番)
+
+.. note::
+
+   Japanese addressing system:
+   http://en.wikipedia.org/wiki/Japanese_addressing_system
+
+But, currently, NDS specification does not have appropriate selection
+criterions to which these Japanese address level can be mapped.
+
+We need to talk with NDS consortium how to model Japanese address
+structure in NDS.
+
+

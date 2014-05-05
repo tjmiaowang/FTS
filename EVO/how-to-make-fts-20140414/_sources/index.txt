@@ -1,0 +1,35 @@
+.. FTS Building Block documentation master file, created by
+   sphinx-quickstart on Fri Mar 28 15:02:31 2014.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+==================
+FTS Building Block
+==================
+
+Full-text Search (FTS) building block provides full text search functionality for POI and Name building block.
+The implementation allows applications to support a convenient one‐shot destination input for POIs and addresses.
+
+
+What should be read to understand FTS
+=====================================
+
+To understand this building block, you need to read the following documents.
+
+* NDS – Format Specification, 17 Full‐text Search Building Block on page 323
+* NDS – Physical Model Description, `FtsDatabase Physical Model <../../nds-physical-model-html/content/nds.all/FtsDatabase_SQL_DATABASE.html>`_
+* `SQLite FTS3 and FTS4 Extensions <http://www.sqlite.org/fts3.html>`_
+
+How to store each FTS table
+===========================
+
+The following sections show how to store each FTS table's content.
+
+.. toctree::
+   :maxdepth: 2
+   
+   fts-tables-for-common/index
+   fts-tables-for-poi/index
+   fts-tables-for-name/index
+   fts-languagecode
+

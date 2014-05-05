@@ -1,0 +1,11 @@
+===================================
+Common Tables for both POI and Name
+===================================
+
+The following tables are needed for both POI and Name in common.
+
+.. toctree::
+   :maxdepth: 2
+   
+   building-block-table
+   building-block-relation-table

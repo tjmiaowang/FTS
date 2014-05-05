@@ -1,0 +1,45 @@
+==================
+buildingBlockTable
+==================
+
+This table describes which building blocks are present in the given product database.
+
+Member detailes
+===============
+
+buildingBlockId:
+   Is a unique identification of an instance of a Building Block type
+   within a update region. There can be multiple BuildingBlock
+   instances of the same type, e.g. for the type "POI".
+   
+buildingBlockName:
+    Building Block Name is a human readable name of a Building Block
+    instance and is assigned by the ndsDbSupplier. It can be used by
+    the system to display status information via HMI. This string is
+    optional and hence can also be null.
+    
+buildingBlockType:
+    Uniquely defines the type of a BuildingBlock. It is defined by the
+    NDS standard.
+    
+buildingBlockDetailedType:
+    Defines one out of several types which are possible for a building
+    block type, e.g. different phonetic alphabet formats for phonetic
+    transcriptions. As not all building blocks have a detailed type,
+    this field can also be null.
+    
+China/Taiwan/Korea/Japan
+========================
+
+.. list-table::
+   :header-rows: 1
+
+   * - buildingBlockId
+     - buildingBlockName
+     - buildingBlockType
+
+   * - any
+     - fts
+     - FTS(0xC)
+
+

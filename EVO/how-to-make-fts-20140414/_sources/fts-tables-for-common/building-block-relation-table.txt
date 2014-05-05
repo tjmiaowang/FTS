@@ -1,0 +1,37 @@
+==========================
+buildingBlockRelationTable
+==========================
+
+This table stores dependencies between building block instances.
+Dependencies shall be bi-directional in this table. 
+There shall be two entries per relation. 
+
+Member detailes
+===============
+
+fromBuildingBlockId:
+   buildingBlockId of source
+
+toBuildingBlockId:
+   buildingBlockId of target
+
+China/Taiwan/Korea/Japan
+========================
+
+.. list-table::
+   :header-rows: 1
+
+   * - fromBuildingBlockId
+     - toBuildingBlockId
+
+   * - (buildingBlockId of POI)
+     - (buildingBlockId of FTS)
+
+   * - (buildingBlockId of FTS)
+     - (buildingBlockId of POI)
+
+   * - (buildingBlockId of Name)
+     - (buildingBlockId of FTS)
+
+   * - (buildingBlockId of FTS)
+     - (buildingBlockId of Name)

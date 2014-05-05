@@ -1,0 +1,204 @@
+==================
+nameFtsSCNameTable
+==================
+
+The table contains the name strings assigned to the selection criteria 
+and is set as well as poiFtsSCNameTable.
+
+.. todo::
+
+   Need to talk with NavInfo, Zenrin and NDS consortium how to express
+   its structure in a metadata table properly. There are a lot of vague things
+   to fullfill these metadata tables.
+
+   For good or bad, currently, our application does not see these
+   metadata tables. They behaves on a document description, and tightly
+   depends on current database storing condition. Thus, there is
+   possibility, if we change structures slightly, it might affect
+   their behaviors drastically. To remove such tight dependancy
+   between database and application, we should maintain metadata
+   tables correctly at first, then the application needs to utilize
+   metadata so that it can behave flexibly.
+
+Member detailes
+===============
+
+selectionCriterion:
+   The selection criterion.
+
+languageCode:
+   The language code of the name string
+
+name: 
+   Name of the selection criterion in the language set in languageCode.
+
+China/Taiwan
+============
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - languageCode
+     - name
+
+   * - SC_COUNTRY(0)
+     - Simplified Chinese(31)
+     - 省/直辖市/特区
+
+   * - SC_COUNTRY(0)
+     - Traditional Chinese(37)
+     - 省/直轄市/特區
+
+   * - SC_COUNTRY(0)
+     - English(182)
+     - Province/Special City/SAR
+
+   * - SC_PLACE(1)
+     - Simplified Chinese(31)
+     - 市/地区
+
+   * - SC_PLACE(1)
+     - Traditional Chinese(37)
+     - 城市/地區
+
+   * - SC_PLACE(1)
+     - English(182)
+     - City/Area
+
+   * - SC_CITY_DISTRICT(6)
+     - Simplified Chinese(31)
+     - 区/县 
+
+   * - SC_CITY_DISTRICT(6)
+     - Traditional Chinese(37)
+     - 區/縣
+
+   * - SC_CITY_DISTRICT(6)
+     - English(182)
+     - District/County
+
+   * - SC_ROAD(2)
+     - Simplified Chinese(31)
+     - 路/街
+
+   * - SC_ROAD(2)
+     - Traditional Chinese(37)
+     - 路/街
+
+   * - SC_ROAD(2)
+     - English(182)
+     - Street
+
+   * - SC_POSTAL_CODE(5)
+     - Simplified Chinese(31)
+     - 邮政编码
+
+   * - SC_POSTAL_CODE(5)
+     - Traditional Chinese(37)
+     - 郵遞區號
+
+   * - SC_POSTAL_CODE(5)
+     - English(182)
+     - Postcode
+
+Korea
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - languageCode
+     - name
+
+   * - SC_COUNTRY(0)
+     - Korean(103)
+     - ?
+
+   * - SC_COUNTRY(0)
+     - English(182)
+     - Province/Special City/SAR
+
+   * - SC_PLACE(1)
+     - Korean(103)
+     - ?
+
+   * - SC_PLACE(1)
+     - English(182)
+     - City/Area
+
+   * - SC_CITY_DISTRICT(6)
+     - Korean(103)
+     - ?
+
+   * - SC_CITY_DISTRICT(6)
+     - Korean(103)English(182)
+     - District/County
+
+   * - SC_ROAD(2)
+     - Korean(103)
+     - ?
+
+   * - SC_ROAD(2)
+     - English(182)
+     - Street
+
+Japan
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - languageCode
+     - name
+
+   * - ?
+     - Japanese(102)
+     - 都道府県
+
+   * - ?
+     - English(182)
+     - Prefecture
+
+   * - ?
+     - Japanese(102)
+     - 市区町村
+
+   * - ?
+     - English(182)
+     - Municipality
+
+   * - ?
+     - Japanese(102)
+     - 町/大字
+
+   * - ?
+     - English(182)
+     - Machi/Oaza
+
+   * - ?
+     - Japanese(102)
+     - 丁目/字
+
+   * - ?
+     - English(182)
+     - Chome/Aza
+
+   * - ?
+     - Japanese(102)
+     - 街区/番地
+
+   * - ?
+     - English(182)
+     - City block/Land number 
+
+   * - ?
+     - Japanese(102)
+     - 住居番号/支番
+
+   * - ?
+     - English(182)
+     - Houser number/Land number extension
+

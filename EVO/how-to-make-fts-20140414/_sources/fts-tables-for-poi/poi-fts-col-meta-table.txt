@@ -1,0 +1,178 @@
+==================
+poiFtsColMetaTable
+==================
+
+This table defines metadata related to a specific column of a FTS
+virtual table.
+
+Member detailes
+===============
+
+columnName:
+   Name of the column in the FTS table instance.
+
+dataAvailability:
+   Indicates availability of the data for the column columnName
+   . Options for data availability:
+  
+   * NONE: column is empty, i.e. not populated
+   * INDEX_ONLY: column empty, data only in index
+   * ALL: data in column and index
+
+substitutionIdPrefix: 
+   Set an unicode character defined in unicodes's Private Use Area (PUA:
+   http://en.wikipedia.org/wiki/Private_Use_Areas). This character is
+   added to substituion or exception Ids as a prefix so that you can
+   avoid searching these Ids unintentionally when you query for
+   telephone number or postal codes. If substitutionIdPrefix is not
+   NULL, an application will take into account ftsSubstitutionTable or
+   ftsExceptionTable to replace substituionId with an actual string data.
+
+China/Taiwan
+============
+
+.. list-table::
+   :header-rows: 1
+
+   * - columnName
+     - dataAvailability
+     - substitutionIdPrefix
+     - description
+
+   * - criterionA
+     - All(2)
+     - NULL
+     -
+
+   * - criterionB
+     - All(2)
+     - NULL
+     -
+
+   * - criterionC
+     - All(2)
+     - NULL
+     -
+
+   * - criterionD
+     - All(2)
+     - NULL
+     -
+
+   * - criterionH
+     - All(2)
+     - NULL
+     -
+
+   * - attributeJ
+     - All(2)
+     - NULL
+     - attributeJ is used for Pinyin/Jyutping/Bopomofo as read name of poiName
+
+   * - searchTags
+     - All(2)
+     - NULL
+     - 
+
+Korea
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - columnName
+     - dataAvailability
+     - substitutionIdPrefix
+     - description
+
+   * - criterionA
+     - All(2)
+     - NULL
+     -
+
+   * - criterionB
+     - All(2)
+     - NULL
+     -
+
+   * - criterionC
+     - All(2)
+     - NULL
+     -
+
+   * - criterionD
+     - All(2)
+     - NULL
+     -
+
+   * - attributeJ
+     - All(2)
+     - NULL
+     - attributeJ is used for Hangul jamo of poiName
+
+   * - searchTags
+     - All(2)
+     - NULL
+     -
+
+Japan
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - columnName
+     - dataAvailability
+     - substitutionIdPrefix
+     - description
+
+   * - criterionA
+     - All(2)
+     - NULL
+     -
+
+   * - criterionB
+     - All(2)
+     - NULL
+     -
+
+   * - criterionC
+     - All(2)
+     - NULL
+     -
+
+   * - criterionD
+     - All(2)
+     - NULL
+     -
+
+   * - attributeJ
+     - All(2)
+     - NULL
+     - attributeJ is used for Yomigana of poiName
+
+   * - searchTags
+     - All(2)
+     - NULL
+     -
+
+
+
+How to input an unicode's PUA character into SQLite table
+=========================================================
+
+You can not input Unicode Private Use Area's characteres directly by
+your keybord, because they are not mapped to concreate glyphs. To do
+that, it requires a special way. One of the method is using SQLite's
+CAST and Blob literals preceded by a single "x" or "X".
+
+For example, U+E000 is a PUA character and its UTF-8 encoding is
+0xEE8080, so if you want to use it as a prefix for Id 42, you can
+write it as follows;
+
+.. code-block:: sql
+
+   INSERT INTO test VALUES (CAST(x'ee8080' AS TEXT)||42);
+   SELECT * FROM test;
+   42
+

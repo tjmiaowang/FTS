@@ -1,0 +1,15 @@
+===============
+Name FTS Tables
+===============
+
+You need to implement the following tables to work FTS for Name building block.
+
+.. toctree::
+   :maxdepth: 2
+   
+   name-fts-table
+   crossroad-fts-table
+   name-fts-sc-namedobjectclass
+   name-fts-sc-name-table
+   name-fts-sc-definition-table
+   name-fts-col-meta-table

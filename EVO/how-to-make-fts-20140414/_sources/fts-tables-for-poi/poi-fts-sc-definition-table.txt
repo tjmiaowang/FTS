@@ -1,0 +1,132 @@
+=======================
+poiFtsSCDefinitionTable
+=======================
+
+The table contains the selection criteria definition for POI FTS 
+
+.. todo::
+
+   Need to talk with NavInfo, Zenrin and NDS consortium how to express
+   its structure in a metadata table properly. There are a lot of vague things
+   to fullfill these metadata tables.
+
+   For good or bad, currently, our application does not see these
+   metadata tables. They behaves on a document description, and tightly
+   depends on current database storing condition. Thus, there is
+   possibility, if we change structures slightly, it might affect
+   their behaviors drastically. To remove such tight dependancy
+   between database and application, we should maintain metadata
+   tables correctly at first, then the application needs to utilize
+   metadata so that it can behave flexibly.
+
+Member detailes
+===============
+
+selectionCriterion:
+   The selection criterion.
+
+columnName:
+    The column name, e.g. "criterionA", "criterionB".
+
+iconSetId:
+    The ID of the associated icon set.
+
+China/Taiwan
+============
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - columnName
+     - iconSetId
+     - description
+
+   * - SC_COUNTRY(0)
+     - criterionA
+     - NULL
+     - Province
+
+   * - SC_PLACE(1)
+     - criterionB
+     - NULL
+     - City
+
+   * - SC_CITY_DISTRICT(6)
+     - criterionC
+     - NULL
+     - City district
+
+   * - SC_ROAD(2)
+     - criterionD
+     - NULL
+     - Street
+
+   * - SC_POSTAL_CODE(5)
+     - criterionH
+     - NULL
+     - Postal code
+
+Korea
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - columnName
+     - iconSetId
+     - description
+
+   * - SC_COUNTRY(0)
+     - criterionA
+     - NULL
+     - Province/Metropolitan cities(do, gwangyeok-si, etc)
+
+   * - SC_PLACE(1)
+     - criterionB
+     - NULL
+     - City (si, gun, gu)
+
+   * - SC_CITY_DISTRICT(6)
+     - criterionC
+     - NULL
+     - City district (eup, myeon, dong)
+
+   * - SC_ROAD(2)
+     - criterionD
+     - NULL
+     - Street
+
+
+Japan
+=====
+
+.. list-table::
+   :header-rows: 1
+
+   * - selectionCriterion
+     - columnName
+     - iconSetId
+     - description
+
+   * - ?
+     - criterionA
+     - NULL
+     - Prefecture
+
+   * - ?
+     - criterionB
+     - NULL
+     - Municipality
+
+   * - ?
+     - criterionC
+     - NULL
+     - Machi/Oaza
+
+   * - ?
+     - criterionD
+     - NULL
+     - Chome/Aza
+
