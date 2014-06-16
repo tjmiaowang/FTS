@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit
+END
+nds_compress.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/nds_compress.c
+END
+nds_extensions.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/nds_extensions.c
+END
+shell.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/shell.c
+END
+nds_extensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/nds_extensions.h
+END
+nds_sqlite3.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/nds_sqlite3.c
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/CMakeLists.txt
+END
+nds_sqlite3.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/nds_sqlite3.h
+END
+nds_sqlite3_analyzer.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/nds_sqlite3_analyzer.c
+END

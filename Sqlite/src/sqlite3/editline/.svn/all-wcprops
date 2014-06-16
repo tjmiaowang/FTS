@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline
+END
+fcns.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/fcns.h
+END
+refresh.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/refresh.c
+END
+el.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/el.c
+END
+history.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/history.c
+END
+vis.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/vis.c
+END
+refresh.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/refresh.h
+END
+el.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/el.h
+END
+wcsdup.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/wcsdup.c
+END
+vis.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/vis.h
+END
+filecomplete.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/filecomplete.c
+END
+keymacro.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/keymacro.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/config.h
+END
+read.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/read.c
+END
+filecomplete.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/filecomplete.h
+END
+eln.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/eln.c
+END
+keymacro.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/keymacro.h
+END
+read.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/read.h
+END
+prompt.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/prompt.c
+END
+histedit.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/histedit.h
+END
+sys.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/sys.h
+END
+chared.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/chared.c
+END
+prompt.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/prompt.h
+END
+emacs.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/emacs.c
+END
+chared.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/chared.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/CMakeLists.txt
+END
+emacs.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/emacs.h
+END
+strlcpy.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/strlcpy.c
+END
+unvis.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/unvis.c
+END
+search.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/search.c
+END
+hist.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/hist.c
+END
+search.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/search.h
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/parse.c
+END
+tokenizer.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/tokenizer.c
+END
+terminal.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/terminal.c
+END
+hist.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/hist.h
+END
+strlcat.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/strlcat.c
+END
+map.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/map.c
+END
+vi.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/vi.c
+END
+parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/parse.h
+END
+historyn.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/historyn.c
+END
+fgetln.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/fgetln.c
+END
+chartype.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/chartype.c
+END
+terminal.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/terminal.h
+END
+tty.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/tty.c
+END
+map.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/map.h
+END
+sig.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/sig.c
+END
+readline.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/readline.c
+END
+vi.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/vi.h
+END
+chartype.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/chartype.h
+END
+tty.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/tty.h
+END
+sig.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/sig.h
+END
+help.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/help.c
+END
+common.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/common.c
+END
+tokenizern.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/tokenizern.c
+END
+fcns.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/fcns.c
+END
+help.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/help.h
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/editline/common.h
+END

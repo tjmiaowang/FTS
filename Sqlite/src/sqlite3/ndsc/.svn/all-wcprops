@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/ndsc
+END
+packerNDSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/ndsc/packerNDSC.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/ndsc/CMakeLists.txt
+END
+packerNDSC.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/ndsc/packerNDSC.c
+END

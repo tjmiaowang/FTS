@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests
+END
+extensions_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/extensions_test.cpp
+END
+test_ndsunicode61_tokenizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_ndsunicode61_tokenizer.h
+END
+test_unichar_queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_unichar_queue.h
+END
+test_utf8_decompose_iterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_utf8_decompose_iterator.h
+END
+extensions_test.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/extensions_test.h
+END
+test_collation_element_iterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_collation_element_iterator.cpp
+END
+test_unichar_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_unichar_utils.cpp
+END
+test_collation_element_iterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_collation_element_iterator.h
+END
+test_unichar_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_unichar_utils.h
+END
+test_lookahead_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_lookahead_buffer.cpp
+END
+test_utf8_char_next.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_utf8_char_next.cpp
+END
+test_lookahead_buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_lookahead_buffer.h
+END
+test_compare.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_compare.cpp
+END
+test_utf8_char_next.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_utf8_char_next.h
+END
+test_compare.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_compare.h
+END
+test_ndsunicode61_tokenizer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_ndsunicode61_tokenizer.cpp
+END
+test_unichar_queue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_unichar_queue.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/CMakeLists.txt
+END
+test_utf8_decompose_iterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tests/test_utf8_decompose_iterator.cpp
+END

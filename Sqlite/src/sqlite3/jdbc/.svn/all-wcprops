@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/jdbc
+END
+NativeDB.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/jdbc/NativeDB.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/jdbc/CMakeLists.txt
+END
+NativeDB.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/jdbc/NativeDB.c
+END

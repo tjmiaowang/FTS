@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations
+END
+nds_collations_impl.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/nds_collations_impl.h
+END
+collation_data_de_de_phonebook.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_data_de_de_phonebook.c
+END
+collation_data_de_de.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_data_de_de.h
+END
+unichar_queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/unichar_queue.h
+END
+utf8_decompose_iterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/utf8_decompose_iterator.h
+END
+collation_data_zh_cn.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_data_zh_cn.h
+END
+collation_element_iterator.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_element_iterator.c
+END
+nds_collations.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/nds_collations.c
+END
+collation_element_iterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_element_iterator.h
+END
+localized_compare.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/localized_compare.c
+END
+collation_data_de_de_standard.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_data_de_de_standard.c
+END
+collation_data_zh_cn_gb2312.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_data_zh_cn_gb2312.c
+END
+lookahead_buffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/lookahead_buffer.c
+END
+localized_compare.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/localized_compare.h
+END
+collation_data.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/collation_data.h
+END
+lookahead_buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/lookahead_buffer.h
+END
+nds_collations_impl.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/nds_collations_impl.c
+END
+unichar_queue.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/unichar_queue.c
+END
+utf8_decompose_iterator.c
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/collations/utf8_decompose_iterator.c
+END

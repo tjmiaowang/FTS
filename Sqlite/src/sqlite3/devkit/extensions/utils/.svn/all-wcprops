@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils
+END
+unichar.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/unichar.h
+END
+unichar_decomposition_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/unichar_decomposition_data.c
+END
+unichar_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/unichar_utils.h
+END
+nds_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/nds_int.h
+END
+unichar_decomposition_data.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/unichar_decomposition_data.h
+END
+nds_bool.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/nds_bool.h
+END
+utf8_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/utf8_utils.c
+END
+nds_extension_macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/nds_extension_macros.h
+END
+unichar_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/unichar_utils.c
+END
+utf8_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/utils/utf8_utils.h
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tokenizer
+END
+nds_unicode61.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tokenizer/nds_unicode61.c
+END
+string_buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tokenizer/string_buffer.h
+END
+nds_unicode61.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/devkit/extensions/tokenizer/nds_unicode61.h
+END

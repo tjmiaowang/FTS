@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/lz4
+END
+lz4.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/lz4/lz4.h
+END
+lz4hc.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/lz4/lz4hc.c
+END
+lz4.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/lz4/lz4.c
+END
+lz4hc.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/lz4/lz4hc.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/lz4/CMakeLists.txt
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/rijndael
+END
+rijndael.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/rijndael/rijndael.c
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/rijndael/CMakeLists.txt
+END
+rijndael.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9874/tags/SQLite/SQLite-3.8.4.2/src/sqlite3/rijndael/rijndael.h
+END

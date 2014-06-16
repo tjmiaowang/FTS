@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 81
+'-r9866' ^/trunk/ValidationSuite/Global_SqLitepp/trunk/src/CppSQLite3 cppsqlite3
+
+END
